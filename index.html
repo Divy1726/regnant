@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Regnant Design | 3D Visualization Studio</title>
+    <meta name="description" content="Premium Interior and Exterior 3D Rendering Services.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons (using a CDN for FontAwesome or similar if needed, or SVG) -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+
+<body>
+    <!-- Preloader -->
+
+    <div id="preloader">
+        <div class="loader-content">
+            <span class="loader-text">REGNANT</span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">REGNANT</a>
+            <ul class="nav-links">
+                <li><a href="portfolio.html">Portfolio</a></li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="home">
+        <div class="hero-bg" id="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="fade-in">Precision. Passion. <br> Perfection.</h1>
+            <p class="fade-in delay-1">Regnant Design is a boutique 3D visualization studio crafting hyper-realistic
+                imagery for architects, developers, and designers worldwide.</p>
+            <a href="#work" class="btn primary-btn fade-in delay-2">View Portfolio</a>
+        </div>
+        <div class="scroll-down">
+            <i class="fa-solid fa-chevron-down"></i>
+        </div>
+    </header>
+
+    <!-- Stats Section -->
+    <section class="stats">
+        <div class="container">
+            <div class="stats-grid">
+                <div class="stat-item">
+                    <h3 class="counter" data-target="5">0</h3>
+                    <p>Years Experience</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="150">0</h3>
+                    <p>Projects Delivered</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="30">0</h3>
+                    <p>Global Clients</p>
+                </div>
+                <div class="stat-item">
+                    <h3 class="counter" data-target="100">0</h3>
+                    <p>% Satisfaction</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Section -->
+    <section id="work" class="portfolio">
+        <div class="container">
+            <div class="section-header">
+                <h2>Selected Works</h2>
+                <div class="line"></div>
+            </div>
+
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Portfolio items will be injected here or hardcoded -->
+                <!-- Hardcoding structure for now for simpler styling -->
+                <div class="portfolio-item">
+                    <img src="assets/images/interior_living.png" alt="Luxury Living Room">
+                    <div class="overlay">
+                        <h3>Modern Living Room</h3>
+                        <p>Interior Design</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/images/exterior_villa.png" alt="Modern Villa Exterior">
+                    <div class="overlay">
+                        <h3>Sunset Villa</h3>
+                        <p>Exterior Visualization</p>
+                    </div>
+                </div>
+                <div class="portfolio-item">
+                    <img src="assets/images/kitchen_detail.png" alt="Kitchen Detail">
+                    <div class="overlay">
+                        <h3>Minimalist Kitchen</h3>
+                        <p>Interior Detail</p>
+                    </div>
+                </div>
+                <!-- Add more as needed -->
+            </div>
+            <div style="text-align: center; margin-top: 40px;">
+                <a href="portfolio.html" class="btn primary-btn">View Full Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="services" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Services</h2>
+                <div class="line"></div>
+            </div>
+            <div class="services-grid">
+                <div class="service-card">
+                    <i class="fa-solid fa-couch"></i>
+                    <h3>Interior Visualization</h3>
+                    <p>Photorealistic rendering for residential and commercial interiors.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-building"></i>
+                    <h3>Exterior Rendering</h3>
+                    <p>Stunning architectural visualization for buildings and landscapes.</p>
+                </div>
+                <div class="service-card">
+                    <i class="fa-solid fa-vr-cardboard"></i>
+                    <h3>360° Walkthroughs</h3>
+                    <p>Immersive virtual tours to experience spaces before they exist.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Process Section -->
+    <section id="process" class="process">
+        <div class="container">
+            <div class="section-header">
+                <h2>Our Process</h2>
+                <div class="line"></div>
+            </div>
+            <div class="process-steps">
+                <div class="step">
+                    <div class="step-icon">01</div>
+                    <h4>Discovery</h4>
+                    <p>We start by understanding your vision, checking drawings, and clarifying the mood and style.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">02</div>
+                    <h4>Modeling</h4>
+                    <p>We build the detailed 3D geometry of your space, ensuring accurate scale and architectural
+                        detailing.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">03</div>
+                    <h4>Rendering</h4>
+                    <p>Materials, textures, and lighting are applied to create photorealistic drafting drafts for your
+                        review.</p>
+                </div>
+                <div class="step">
+                    <div class="step-icon">04</div>
+                    <h4>Refinement</h4>
+                    <p>We polish the final high-resolution images, adjusting colors and contrast for maximum impact.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text">
+                    <h2>About Regnant</h2>
+                    <p>Founded with a passion for architectural storytelling, Regnant Design bridges the gap between
+                        technical blueprints and emotional experiences.</p>
+                    <p>Led by Parth Ukani, our studio specializes in high-end CGI that helps architects sell their
+                        vision and developers sell their properties. We don't just render walls; we render lifestyles.
+                        Every shadow, reflection, and texture is meticulously crafted to create an atmosphere that feels
+                        undeniably real.</p>
+                </div>
+                <div class="about-image">
+                    <img src="assets/images/about.png" alt="About Us">
+                    <div class="placeholder-box"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section class="testimonials">
+        <div class="container">
+            <div class="section-header">
+                <h2>Client Words</h2>
+                <div class="line"></div>
+            </div>
+            <div class="testimonials-grid">
+                <div class="testimonial-card">
+                    <p>"Regnant Design transformed our rough sketches into a masterpiece. The attention to lighting and
+                        texture is unmatched."</p>
+                    <h4>- Ar. Rajesh Kumar</h4>
+                    <span>Principal Architect, Studio 9</span>
+                </div>
+                <div class="testimonial-card">
+                    <p>"Professional, timely, and incredibly talented. Parth and his team understood our vision
+                        immediately."</p>
+                    <h4>- Sarah Jenkins</h4>
+                    <span>Real Estate Developer</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Instagram Section -->
+    <section class="instagram-feed">
+        <div class="container">
+            <div class="section-header">
+                <h2>@regnant_design</h2>
+                <br>
+                <p style="margin-top: -40px; margin-bottom: 40px; color: var(--text-secondary);">Follow us on Instagram
+                </p>
+                <div class="line"></div>
+            </div>
+            <div class="insta-grid">
+                <a href="https://www.instagram.com/regnant_design" target="_blank" class="insta-item">
+                    <img src="assets/images/i 1.webp" alt="Instagram Post">
+                    <div class="insta-overlay">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/regnant_design" target="_blank" class="insta-item">
+                    <img src="assets/images/i 2.webp" alt="Instagram Post">
+                    <div class="insta-overlay">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/regnant_design" target="_blank" class="insta-item">
+                    <img src="assets/images/i 3.webp" alt="Instagram Post">
+                    <div class="insta-overlay">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com/regnant_design" target="_blank" class="insta-item">
+                    <img src="assets/images/i 4.webp" alt="Instagram Post">
+                    <div class="insta-overlay">
+                        <i class="fa-brands fa-instagram"></i>
+                    </div>
+                </a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Let's Collaborate</h2>
+                    <p>Have a project in mind? Reach out to us.</p>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Info@regnantdesign.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-brands fa-behance"></i>
+                        <span>behance.net/ukaniparth</span>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links" style="margin-bottom: 20px;">
+                <a href="https://www.instagram.com/regnant_design" target="_blank"
+                    style="margin: 0 10px; font-size: 1.2rem;"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.behance.net/ukaniparth" target="_blank"
+                    style="margin: 0 10px; font-size: 1.2rem;"><i class="fa-brands fa-behance"></i></a>
+            </div>
+            <p>&copy; 2026 Regnant Design. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+</body>
+
+</html>

@@ -1,0 +1,323 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio | Regnant Design</title>
+    <meta name="description" content="Explore our portfolio of premium interior and exterior 3D renderings.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;600;700&family=Playfair+Display:ital,wght@0,400;0,600;1,400&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!-- Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+
+<body>
+    <!-- Preloader -->
+    <div id="preloader">
+        <div class="loader-content">
+            <span class="loader-text">REGNANT</span>
+            <div class="loader-bar"></div>
+        </div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="container">
+            <a href="index.html" class="logo">REGNANT</a>
+            <ul class="nav-links">
+                <li><a href="portfolio.html" class="active">Portfolio</a></li>
+                <li><a href="index.html#services">Services</a></li>
+                <li><a href="index.html#about">About</a></li>
+                <li><a href="index.html#contact">Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <header class="page-header">
+        <div class="hero-bg" id="hero-bg"></div>
+        <div class="hero-content">
+            <h1 class="fade-in">Selected Works</h1>
+        </div>
+    </header>
+
+    <!-- Portfolio Intro & Filters -->
+    <section class="portfolio-intro">
+        <div class="container">
+            <p class="fade-in delay-1">Every project is a unique story of light, space, and texture. We curate
+                environments that evoke emotion and inspire imagination.</p>
+
+            <div class="portfolio-filters fade-in delay-2">
+                <button class="filter-btn active" data-filter="all">All Projects</button>
+                <button class="filter-btn" data-filter="interior">Interior</button>
+                <button class="filter-btn" data-filter="exterior">Exterior</button>
+                <button class="filter-btn" data-filter="commercial">Commercial</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Portfolio Grid -->
+    <section class="portfolio" id="work">
+        <div class="container">
+            <div class="portfolio-grid" id="portfolio-grid">
+                <!-- Project 1 -->
+                <div class="portfolio-item" data-category="interior" data-project="modern-living-room">
+                    <img src="assets/images/interior_living.png" alt="Luxury Living Room">
+                    <div class="overlay">
+                        <h3>Modern Living Room</h3>
+                        <span class="meta">Interior Design / 2025</span>
+                        <div class="view-project">View Project <i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <!-- Project 2 -->
+                <div class="portfolio-item" data-category="exterior" data-project="sunset-villa">
+                    <img src="assets/images/exterior_villa.png" alt="Modern Villa Exterior">
+                    <div class="overlay">
+                        <h3>Sunset Villa</h3>
+                        <span class="meta">Exterior Visualization / Dubai</span>
+                        <div class="view-project">View Project <i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <!-- Project 3 -->
+                <div class="portfolio-item" data-category="interior" data-project="minimalist-kitchen">
+                    <img src="assets/images/kitchen_detail.png" alt="Kitchen Detail">
+                    <div class="overlay">
+                        <h3>Minimalist Kitchen</h3>
+                        <span class="meta">Interior Detail / London</span>
+                        <div class="view-project">View Project <i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <!-- Project 4 -->
+                <div class="portfolio-item" data-category="interior" data-project="master-bedroom">
+                    <img src="assets/images/interior_living.png" alt="Luxury Master Bedroom">
+                    <div class="overlay">
+                        <h3>Master Bedroom</h3>
+                        <span class="meta">Interior Visualization / New York</span>
+                        <div class="view-project">View Project <i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <!-- Project 5 -->
+                <div class="portfolio-item" data-category="commercial" data-project="skyline-tower">
+                    <img src="assets/images/exterior_villa.png" alt="Commercial Complex">
+                    <div class="overlay">
+                        <h3>Skyline Tower</h3>
+                        <span class="meta">Commercial Exterior / Toronto</span>
+                        <div class="view-project">View Project <i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </div>
+                <!-- Project 6 -->
+                <div class="portfolio-item" data-category="interior" data-project="spa-bathroom">
+                    <img src="assets/images/kitchen_detail.png" alt="Bathroom Detail">
+                    <div class="overlay">
+                        <h3>Spa Bathroom</h3>
+                        <span class="meta">Interior Detail / Paris</span>
+                        <div class="view-project">View Project <i class="fa-solid fa-arrow-right"></i></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Project Modal -->
+    <div class="project-modal" id="project-modal" aria-hidden="true">
+        <div class="project-modal__backdrop" data-close></div>
+        <div class="project-modal__dialog" role="dialog" aria-modal="true" aria-labelledby="project-title">
+            <button class="project-modal__close" type="button" aria-label="Close" data-close>
+                <i class="fa-solid fa-xmark"></i>
+            </button>
+            <div class="project-modal__media">
+                <button class="project-modal__nav prev" type="button" aria-label="Previous image" data-prev>
+                    <i class="fa-solid fa-chevron-left"></i>
+                </button>
+                <img id="project-image" src="" alt="Project image">
+                <button class="project-modal__nav next" type="button" aria-label="Next image" data-next>
+                    <i class="fa-solid fa-chevron-right"></i>
+                </button>
+                <div class="project-modal__counter" id="project-counter">1 / 1</div>
+            </div>
+            <div class="project-modal__content">
+                <h2 id="project-title">Project Title</h2>
+                <p id="project-desc">Project description goes here.</p>
+                <div class="project-modal__grid">
+                    <div>
+                        <span class="label">CLIENT</span>
+                        <span id="project-client">—</span>
+                    </div>
+                    <div>
+                        <span class="label">TYPE</span>
+                        <span id="project-type">—</span>
+                    </div>
+                    <div>
+                        <span class="label">LOCATION</span>
+                        <span id="project-location">—</span>
+                    </div>
+                    <div>
+                        <span class="label">YEAR</span>
+                        <span id="project-year">—</span>
+                    </div>
+                    <div>
+                        <span class="label">TIMELINE</span>
+                        <span id="project-timeline">—</span>
+                    </div>
+                    <div>
+                        <span class="label">SCOPE</span>
+                        <span id="project-scope">—</span>
+                    </div>
+                </div>
+                <div class="project-modal__section">
+                    <span class="label">DELIVERABLES</span>
+                    <div class="project-modal__chips" id="project-deliverables"></div>
+                </div>
+                <div class="project-modal__section">
+                    <span class="label">HIGHLIGHTS</span>
+                    <div class="project-modal__chips" id="project-highlights"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- Design Philosophy Section -->
+    <section class="philosophy">
+        <div class="container">
+            <div class="philosophy-content">
+                <div class="philosophy-text">
+                    <h2>Philosophy of <br>Light & Space</h2>
+                    <div class="line" style="margin: 30px 0; width: 80px;"></div>
+                    <p>We believe that architecture is not just about structure, but about the interplay of light and
+                        shadow. Our renderings capture the ephemeral quality of daylight as it moves across surfaces,
+                        creating spaces that feel alive.</p>
+                    <div class="philosophy-highlight">
+                        "To capture the soul of a space is to understand its silence."
+                    </div>
+                    <p>Every texture is chosen with purpose, every angle considered for impact. We don't just visualize
+                        designs; we translate architectural intent into emotional resonance.</p>
+                </div>
+                <div class="philosophy-image">
+                    <img src="assets/images/about.png" alt="Philosophy" style="filter: grayscale(100%) contrast(1.2);">
+                    <!-- Fallback placeholder if image missing -->
+                    <div
+                        style="width: 100%; height: 400px; background: #222; display: flex; align-items: center; justify-content: center; border: 1px solid #333; margin-top: 20px;">
+                        <span style="color: #666;">Conceptual Image</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Clientele Section -->
+    <section class="logo-section">
+        <div class="container">
+            <h3>Selected Clientele</h3>
+            <div class="logo-grid">
+                <div class="logo-item">MARRIOTT</div>
+                <div class="logo-item">HILTON</div>
+                <div class="logo-item">EMAAR</div>
+                <div class="logo-item">GENSLER</div>
+                <div class="logo-item">FOSTER +</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Featured In Section -->
+    <section class="logo-section" style="background: var(--card-bg);">
+        <div class="container">
+            <h3>Featured In</h3>
+            <div class="logo-grid">
+                <div class="logo-item">ARCHDAILY</div>
+                <div class="logo-item">DEZEEN</div>
+                <div class="logo-item">ELLE DECOR</div>
+                <div class="logo-item">VOGUE LIVING</div>
+            </div>
+        </div>
+    </section>
+
+    <script>
+        // Filter functionality
+        const filterBtns = document.querySelectorAll('.filter-btn');
+        const portfolioItems = document.querySelectorAll('.portfolio-item');
+
+        filterBtns.forEach(btn => {
+            btn.addEventListener('click', () => {
+                // Remove active class from all buttons
+                filterBtns.forEach(b => b.classList.remove('active'));
+                // Add active class to clicked button
+                btn.classList.add('active');
+
+                const filterValue = btn.getAttribute('data-filter');
+
+                portfolioItems.forEach(item => {
+                    if (filterValue === 'all' || item.getAttribute('data-category') === filterValue) {
+                        item.style.display = 'block';
+                        // Add fade in animation could go here
+                    } else {
+                        item.style.display = 'none';
+                    }
+                });
+            });
+        });
+    </script>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="contact-wrapper">
+                <div class="contact-info">
+                    <h2>Let's Collaborate</h2>
+                    <p>Have a project in mind? Reach out to us.</p>
+                    <div class="info-item">
+                        <i class="fa-solid fa-envelope"></i>
+                        <span>Info@regnantdesign.com</span>
+                    </div>
+                    <div class="info-item">
+                        <i class="fa-brands fa-behance"></i>
+                        <span>behance.net/ukaniparth</span>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Name" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Email" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea rows="5" placeholder="Message" required></textarea>
+                    </div>
+                    <button type="submit" class="btn primary-btn">Send Message</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <div class="container">
+            <div class="social-links" style="margin-bottom: 20px;">
+                <a href="https://www.instagram.com/regnant_design" target="_blank"
+                    style="margin: 0 10px; font-size: 1.2rem;"><i class="fa-brands fa-instagram"></i></a>
+                <a href="https://www.behance.net/ukaniparth" target="_blank"
+                    style="margin: 0 10px; font-size: 1.2rem;"><i class="fa-brands fa-behance"></i></a>
+            </div>
+            <p>&copy; 2026 Regnant Design. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/script.js"></script>
+
+</body>
+
+</html>
