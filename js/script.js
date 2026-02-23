@@ -124,17 +124,17 @@ document.addEventListener('DOMContentLoaded', () => {
     if (projectModal && portfolioItems.length > 0) {
         const projectData = {
             'modern-living-room': {
-                title: 'Modern Living Room',
+                title: 'Baghe Farid Laxuria',
                 desc: 'Warm neutrals, layered textures, and soft lighting crafted for a calm, luxurious family space.',
                 client: 'Shreemdesign',
-                type: 'Interior',
+                type: 'Exterior',
                 location: 'Ahmedabad',
                 year: '2025',
                 timeline: '5 Weeks',
                 scope: 'Living, Dining, Entry',
                 deliverables: ['3 Hero Stills', '2 Detail Shots', 'Material Board'],
                 highlights: ['Warm Daylight Studies', 'Custom Furniture'],
-                images: ['assets/images/interior_living.png', 'assets/images/i 1.webp', 'assets/images/i 2.webp']
+                images: ['assets/images/i (1).webp', 'assets/images/i (2).webp','assets/images/i (3).webp', 'assets/images/i (4).webp','assets/images/i (5).webp', 'assets/images/i (6).webp',]
             },
             'sunset-villa': {
                 title: 'Sunset Villa',
